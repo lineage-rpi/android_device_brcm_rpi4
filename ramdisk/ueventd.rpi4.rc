@@ -1,0 +1,14 @@
+# Bluetooth
+/dev/ttyAMA0                                                                 0660   bluetooth  bluetooth
+/dev/rfkill                                                                  0660   bluetooth  bluetooth
+/sys/devices/platform/soc/fe201000.serial/tty/ttyAMA0/hci0/rfkill1  state    0660   bluetooth  bluetooth
+/sys/devices/platform/soc/fe201000.serial/tty/ttyAMA0/hci0/rfkill1  type     0440   bluetooth  bluetooth
+
+# Camera
+/dev/video*                                                                  0660   system     camera
+
+# GPS
+/dev/ttyACM0                                                                 0660   system     radio
+
+# ION
+/dev/ion                                                                     0664   system     system

@@ -1,0 +1,12 @@
+
+# Audio
+audio.pcm.card=0
+audio.pcm.device=0
+
+# Display
+#persist.sys.ui.hw=disable
+ro.hardware.egl=mesa
+ro.hardware.gralloc=gbm
+ro.hardware.hwcomposer=drm
+ro.opengles.version=196609
+vendor.hwc.drm.scale_with_gpu=1

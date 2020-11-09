@@ -1,0 +1,71 @@
+# Kernel
+kernel=zImage
+
+# Ramdisk
+gpio=21=ip,pu
+[gpio21=1]
+initramfs ramdisk.img followkernel
+[gpio21=0]
+initramfs ramdisk-recovery.img followkernel
+[all]
+
+# Audio
+dtparam=audio=on
+hdmi_force_edid_audio=1
+
+# Audio DAC
+#dtoverlay=hifiberry-dacplus
+
+# Boot device
+dtoverlay=android-sdcard
+#dtoverlay=android-usb
+
+# Camera
+gpu_mem=128
+start_x=1
+
+# Display
+hdmi_force_hotplug=1
+hdmi_drive=2
+hdmi_group=1
+hdmi_mode=4
+disable_overscan=1
+
+# Graphics acceleration
+[gpio21=1]
+dtoverlay=vc4-kms-v3d-pi4,noaudio
+dtoverlay=cma,cma-384
+[all]
+
+# I2C
+dtparam=i2c_arm=on
+
+# I2S
+#dtparam=i2s=on
+
+# IR
+#dtoverlay=gpio-ir,gpio_pin=18
+
+# Keys
+#dtoverlay=gpio-key,gpio=21,keycode=116,label="POWER"
+#dtoverlay=gpio-key,gpio=26,keycode=115,label="VOLUME_UP"
+#dtoverlay=gpio-key,gpio=20,keycode=114,label="VOLUME_DOWN"
+
+# RPI display/touchscreen
+dtoverlay=rpi-backlight
+dtoverlay=rpi-ft5406
+
+# RTC
+#dtoverlay=i2c-rtc,ds3231
+
+# Serial console
+enable_uart=1
+
+# SPI
+dtparam=spi=on
+
+# USB-C
+#dtoverlay=dwc2,dr_mode=peripheral
+
+# Waveshare touchscreen
+#dtoverlay=ads7846,cs=1,penirq=25,penirq_pull=2,speed=50000,keep_vref_on=0,swapxy=0,pmax=255,xohms=150,xmin=200,xmax=3900,ymin=200,ymax=3900
