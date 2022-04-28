@@ -1,0 +1,1 @@
+/usb  auto  /dev/block/sdb1  /dev/block/sdb  flags=display="USB";storage;wipeingui;removable

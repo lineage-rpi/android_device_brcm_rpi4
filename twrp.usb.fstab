@@ -1,6 +1,0 @@
-/boot     vfat  /dev/block/by-name/boot          flags=backup=1
-/system   ext4  /dev/block/by-name/system        flags=backup=1
-/vendor   ext4  /dev/block/by-name/vendor        flags=backup=1
-/data     ext4  /dev/block/by-name/userdata      flags=encryptable=footer;length=-16384
-
-/usb      auto  /dev/block/sdb1  /dev/block/sdb  flags=display="USB";storage;wipeingui;removable

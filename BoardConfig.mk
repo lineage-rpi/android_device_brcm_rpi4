@@ -38,7 +38,7 @@ TARGET_USERIMAGES_SPARSE_EXT_DISABLED := true
 TARGET_USERIMAGES_USE_EXT4 := true
 
 # Recovery
-TARGET_RECOVERY_FSTAB := device/brcm/rpi4/twrp.fstab
+TARGET_RECOVERY_FSTAB := device/brcm/rpi4/recovery.fstab
 TARGET_RECOVERY_PIXEL_FORMAT := "RGB_565"
 
 # TWRP
